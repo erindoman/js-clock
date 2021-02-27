@@ -19,7 +19,9 @@ function currentTime(){
     sec = (sec < 10) ? "0" + sec : sec
 
     var time = hour + ":" + min + ":" + sec + " " + session
-
+    document.getElementById("Clock").innerText = time
+    document.getElementById("Clock").textContent = time
+    setTimeout(showTime, 1000)
 }
 
 currentTime()
